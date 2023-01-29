@@ -11,7 +11,7 @@ const questions = [
     message: "what is the title of your projet?",
   },
   {
-    type: "input",
+    type: "editor",
     name: "description",
     message: "describe your project",
   },
