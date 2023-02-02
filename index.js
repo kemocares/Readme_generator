@@ -16,24 +16,41 @@ const questions = [
     message: "describe your project",
   },
   {
-    type: "input",
+    type: "editor",
     name: "installation",
     message:
       "Provide a step-by-step description of how to get the development environment running.",
   },
   {
+    type: "editor",
     name: "usage",
     message:
       "Provide instructions and examples for use. Include screenshots as needed.",
   },
   {
-    name: "tests",
-    message:
-      "Go the extra mile and write tests for your application. Then provide examples on how to run them.",
+    name: "license",
+    type: "list",
+    message: "Please choose from the following license options",
+    choices: ["Apache", "IBM", "ISC", "MIT", "Mozilla"],
+    default: "ISC",
   },
   {
-    name: "questions",
-    message: "Any question?",
+    type: "editor",
+    name: "contributing",
+    message: "What are the contribution guidelines for this project?",
+  },
+  {
+    name: "tests",
+    type: "editor",
+    message: "Provide examples on how to run test on your application.",
+  },
+  {
+    name: "username",
+    message: "What is your Github Username?",
+  },
+  {
+    name: "email",
+    message: "What is your email address?",
   },
 ];
 
